@@ -1,0 +1,26 @@
+Traceback (most recent call last):
+  File "/home/yahwista/esp/esp-idf/components/esptool_py/esptool/esptool.py", line 22, in <module>
+    esptool._main()  # type: ignore
+  File "/home/yahwista/.espressif/python_env/idf5.1_py3.10_env/lib/python3.10/site-packages/esptool/__init__.py", line 1022, in _main
+    main()
+  File "/home/yahwista/.espressif/python_env/idf5.1_py3.10_env/lib/python3.10/site-packages/esptool/__init__.py", line 824, in main
+    operation_func(esp, args)
+  File "/home/yahwista/.espressif/python_env/idf5.1_py3.10_env/lib/python3.10/site-packages/esptool/cmds.py", line 556, in write_flash
+    esp.flash_defl_block(block, seq, timeout=timeout)
+  File "/home/yahwista/.espressif/python_env/idf5.1_py3.10_env/lib/python3.10/site-packages/esptool/loader.py", line 109, in inner
+    return func(*args, **kwargs)
+  File "/home/yahwista/.espressif/python_env/idf5.1_py3.10_env/lib/python3.10/site-packages/esptool/loader.py", line 988, in flash_defl_block
+    self.check_command(
+  File "/home/yahwista/.espressif/python_env/idf5.1_py3.10_env/lib/python3.10/site-packages/esptool/loader.py", line 407, in check_command
+    val, data = self.command(op, data, chk, timeout=timeout)
+  File "/home/yahwista/.espressif/python_env/idf5.1_py3.10_env/lib/python3.10/site-packages/esptool/loader.py", line 376, in command
+    p = self.read()
+  File "/home/yahwista/.espressif/python_env/idf5.1_py3.10_env/lib/python3.10/site-packages/esptool/loader.py", line 308, in read
+    return next(self._slip_reader)
+StopIteration
+CMake Error at run_serial_tool.cmake:55 (message):
+  
+  /home/yahwista/.espressif/python_env/idf5.1_py3.10_env/bin/python;;/home/yahwista/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32
+  failed
+
+
